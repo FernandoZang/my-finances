@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_finances/model/Transacao.dart';
 import 'package:my_finances/model/repository/TransacaoRepository.dart';
-import 'package:my_finances/transacao_card.dart';
+import 'package:my_finances/card_transacao.dart';
 
 class TelaSaidas extends StatefulWidget {
 
@@ -30,7 +30,7 @@ class _TelaSaidasState extends State {
         itemBuilder: (context, index) {
           if(index<transacoes.length) {
             Transacao transacao = transacoes[index] as Transacao;
-            return TransacaoCard(id: transacao.id, descricao: transacao.descricao, valor: transacao.valor, entrada: transacao.entrada,);
+            return CardTransacao(id: transacao.id, descricao: transacao.descricao, valor: transacao.valor, entrada: transacao.entrada,);
           }
         }
       ),

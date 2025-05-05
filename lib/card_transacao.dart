@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class TransacaoCard extends StatefulWidget {
-  const TransacaoCard({
+class CardTransacao extends StatefulWidget {
+  const CardTransacao({
     Key? key,
     required this.id,
     required this.descricao,
@@ -17,10 +17,10 @@ class TransacaoCard extends StatefulWidget {
   final bool entrada;
 
   @override
-  State<TransacaoCard> createState() => _TransacaoCardState();
+  State<CardTransacao> createState() => _CardTransacaoState();
 }
 
-class _TransacaoCardState extends State<TransacaoCard> {
+class _CardTransacaoState extends State<CardTransacao> {
   
 
   @override

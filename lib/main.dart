@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_finances/entradas.dart';
+import 'package:my_finances/tela_entradas.dart';
 import 'package:my_finances/tela_saidas.dart';
 
 void main() {
