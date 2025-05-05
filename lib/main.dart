@@ -33,22 +33,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   int _selectedIndex = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
   
   void _onItemTapped(int index){
-    _selectedIndex = index;
-    switch(index) {
-      case 1: Navigator.push(context, MaterialPageRoute(builder: (context) => const TelaEntradas('Entradas')));
-      case 2: Navigator.push(context, MaterialPageRoute(builder: (context) => const TelaSaidas('Saídas')));
-    }
     setState(() {
+      _selectedIndex = index;
+      switch(index) {
+        case 1: Navigator.push(context, MaterialPageRoute(builder: (context) => const TelaEntradas('Entradas')));
+        case 2: Navigator.push(context, MaterialPageRoute(builder: (context) => const TelaSaidas('Saídas')));
+      }
     });
   }
 

@@ -5,4 +5,8 @@ class Transacao{
   bool entrada;
 
   Transacao(this.id, this.descricao, this.valor, this.entrada);
+
+  getEntrada(){
+    return entrada;
+  }
 }
