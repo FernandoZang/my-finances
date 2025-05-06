@@ -39,6 +39,18 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^2.3.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.png
+  branding: assets/images/branding.png
+  android: true
+  ios: true
+  web: true
+  chrome: true
+  fullscreen: true
+  android_gravity: center
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -52,6 +64,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/branding.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

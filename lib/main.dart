@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_finances/SplashScreenFlutter.dart';
 import 'package:my_finances/tela_entradas.dart';
 import 'package:my_finances/tela_saidas.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Minhas Finanças'),
+      home: SplashScreenFlutter(),
     );
   }
 }
@@ -57,7 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Card(
-              child: Text('Gerencia suas finanças'),
+              child: Text('Gerencie suas finanças',
+              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 35)),
             ) 
           ],
         ),
