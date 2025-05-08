@@ -3,25 +3,25 @@ import 'package:my_finances/model/Transacao.dart';
 import 'package:my_finances/model/repository/TransacaoRepository.dart';
 import 'package:my_finances/card_transacao.dart';
 
-class TelaSaidas extends StatefulWidget {
+class TelaEntradas extends StatefulWidget {
 
-  const TelaSaidas(String s, {super.key});
+  const TelaEntradas(String s, {super.key});
 
   @override
-  _TelaSaidasState createState() => _TelaSaidasState();
+  _TelaEntradasState createState() => _TelaEntradasState();
 
 }
 
-class _TelaSaidasState extends State {
+class _TelaEntradasState extends State {
   var repository = Transacaorepository();
   
   @override
   Widget build(BuildContext context) {
-    var transacoes = repository.saidas();
+    var transacoes = repository.entradas();
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Saidas"),
+        title: const Text("Entradas"),
         backgroundColor: const Color.fromARGB(255, 206, 55, 198),
       ),
       body: ListView.builder(
@@ -32,17 +32,20 @@ class _TelaSaidasState extends State {
             Transacao transacao = transacoes[index] as Transacao;
             return CardTransacao(id: transacao.id, descricao: transacao.descricao, valor: transacao.valor, entrada: transacao.entrada,);
           }
+          return null;
         }
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _addSaida,
-        tooltip: 'Adicionar Saida',
+        onPressed: _addEntrada,
+        tooltip: 'Adicionar Entrada',
         child: const Icon(Icons.add),
       )
     );
   }
 
-  void _addSaida(){
-      print('Adicionando saida');
+
+
+  void _addEntrada(){
+      print('Adicionando entrada');
   }
 }
