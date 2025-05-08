@@ -15,6 +15,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final List<Map<String, String>> _onboardingData = [
     {
       "title": "Bem-vindo ao Minhas Finanças",
+      "description": "Aplicativo para controle financeiro pessoal.",
       "image": "assets/images/logo.png", 
     },
     {
