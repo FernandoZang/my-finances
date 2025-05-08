@@ -13,3 +13,9 @@ O Sistema de Controle de finanças é um aplicativo desenvolvido para ajudar na 
 
 ## Tecnologias Utilizadas
 - Flutter
+
+
+## Integrantes
+  - Ana Cecilia De Morais
+  - Fernando Zang
+  - Rodrigo Caio Koelln Alfonsin
